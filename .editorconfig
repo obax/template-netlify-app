@@ -1,0 +1,39 @@
+# editorconfig.org
+
+# This is the project's root directory
+root = true
+
+[*]
+# No whitespace at the end of line
+charset = utf-8
+# Unix-style line endings
+end_of_line = lf
+# Use spaces for indentation
+indent_style = space
+# Use spaces for indentation
+indent_size = 2
+# A line should not have more than this amount of chars (not supported by all plugins)
+insert_final_newline = true
+# No whitespace at the end of line
+trim_trailing_whitespace = true
+# A line should not have more than this amount of chars (not supported by all plugins)
+max_line_length = 100
+
+[{Makefile,**.mk}]
+indent_style = tab
+indent_key_invoke = $TAB
+
+[*.md]
+trim_trailing_whitespace = false
+
+# Airbnb style-guide
+[*.{js, jsx, css}]
+indent_size = 2
+indent_key_invoke = $TAB
+
+# PSR-2
+[*.{php,twig}]
+indent_size = 4
+
+[*.{yml,yaml}]
+indent_size = 2
